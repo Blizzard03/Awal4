@@ -7,6 +7,8 @@ package awal4.Awal4.Main_Class;
 import java.text.NumberFormat;
 import java.util.Locale;
 
+import awal4.Awal4.Buku_Class.BukuKomik;
+import awal4.Awal4.Buku_Class.BukuPelajaran;
 import awal4.Awal4.Buku_Class.Buku_Class;
 
 /**
@@ -80,6 +82,10 @@ public class main_class {
                 "The Company of Wolves",
                 "Angela Carter",
                 316200.00);
+
+        // Book 4
+        final BukuKomik komik = new BukuKomik(0, "", "", 0, 0.0, false);
+        final BukuPelajaran edu = new BukuPelajaran("", "", "", 0, 0.0, false);
         System.out.println("==============================================================");
         System.out.println("======================= AWAL 4 Program =======================");
         System.out.println("==============================================================" + "\n");
@@ -183,6 +189,19 @@ public class main_class {
         System.out.println("Penulis: " + buku9.getPenulis());
         System.out.println("Harga: " + formater.format(buku9.getHarga()));
         System.out.println("==============================================================");
+        System.out.println("=========================Average Price========================");
+        System.out.println(formater.format(Buku_Class.calculateavgprice((buku1.getHarga()
+                + buku2.getHarga()
+                + buku3.getHarga()
+                + buku4.getHarga()
+                + buku5.getHarga()
+                + buku6.getHarga()
+                + buku7.getHarga()
+                + buku8.getHarga()
+                + buku9.getHarga()
+                + komik.getHarga()
+                + edu.getHarga())
+                / 11)));
         System.out.println("============================== END ===========================");
         System.out.println("Made by WPA TEAM");
     }

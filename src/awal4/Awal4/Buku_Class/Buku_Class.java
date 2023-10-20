@@ -9,11 +9,13 @@ package awal4.Awal4.Buku_Class;
  * @author mariq
  */
 public class Buku_Class {
+
     public String judul;
     public String penulis;
     public int tahunTerbit;
     public double harga;
     public boolean tersedia;
+    public static double avg = 0;
 
     // Full Constructor
     public Buku_Class(String judul, String penulis, int tahunTerbit, double harga, boolean tersedia) {
@@ -59,6 +61,18 @@ public class Buku_Class {
 
     public boolean isTersedia() {
         return tersedia;
+    }
+
+    public static double getAvg() {
+        return avg;
+    }
+
+    public static double calculateavgprice(double avg) {
+        return Buku_Class.avg = avg;
+    }
+    
+    public void tampilkan(){
+        System.out.print(judul);
     }
 
 }
