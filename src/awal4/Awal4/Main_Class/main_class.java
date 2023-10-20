@@ -7,9 +7,9 @@ package awal4.Awal4.Main_Class;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import awal4.Awal4.Buku_Class.BukuKomik;
-import awal4.Awal4.Buku_Class.BukuPelajaran;
-import awal4.Awal4.Buku_Class.Buku_Class;
+import awal4.Awal4.Buku_Class.Master.Buku_Class;
+import awal4.Awal4.Buku_Class.Sub.BukuKomik;
+import awal4.Awal4.Buku_Class.Sub.BukuPelajaran;
 
 /**
  *
@@ -84,8 +84,22 @@ public class main_class {
                 316200.00);
 
         // Book 4
-        final BukuKomik komik = new BukuKomik(0, "", "", 0, 0.0, false);
-        final BukuPelajaran edu = new BukuPelajaran("", "", "", 0, 0.0, false);
+        final BukuKomik komik = new BukuKomik(
+                "",
+                "",
+                0,
+                0.0,
+                false,
+                0,
+                "");
+        final BukuPelajaran edu = new BukuPelajaran(
+                "",
+                "",
+                0,
+                0,
+                false,
+                "",
+                "");
         System.out.println("==============================================================");
         System.out.println("======================= AWAL 4 Program =======================");
         System.out.println("==============================================================" + "\n");

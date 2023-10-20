@@ -2,19 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package awal4.Awal4.Buku_Class;
+package awal4.Awal4.Buku_Class.Sub;
+
+import awal4.Awal4.Buku_Class.Master.Buku_Class;
 
 /**
  *
  * @author mariq
  */
 public class BukuPelajaran extends Buku_Class {
-    private String penerbit;
-
-    public BukuPelajaran(String penerbit, String judul, String penulis, int tahunTerbit, double harga,
-            boolean tersedia) {
+    private final String penerbit;
+    private final String kelas;
+    
+    public BukuPelajaran(String judul, String penulis, int tahunTerbit, double harga, boolean tersedia, String penerbit,
+            String kelas) {
         super(judul, penulis, tahunTerbit, harga, tersedia);
         this.penerbit = penerbit;
+        this.kelas = kelas;
+    }
+
+
+    public String getKelas() {
+        return kelas;
     }
 
     public String getPenerbit() {
@@ -32,7 +41,9 @@ public class BukuPelajaran extends Buku_Class {
                 getTahunTerbit(),
                 getHarga(),
                 isTersedia(),
-                penerbit);
+                penerbit,
+                kelas);
 
     }
+
 }

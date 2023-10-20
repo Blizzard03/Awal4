@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package awal4.Awal4.Buku_Class;
+package awal4.Awal4.Buku_Class.Master;
 
 /**
  *
@@ -70,8 +70,8 @@ public class Buku_Class {
     public static double calculateavgprice(double avg) {
         return Buku_Class.avg = avg;
     }
-    
-    public void tampilkan(){
+
+    public void tampilkan() {
         System.out.print(judul);
     }
 
